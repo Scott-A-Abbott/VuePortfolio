@@ -95,9 +95,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+$n : normal;
+$color : red;
 h1, h2 {
-  font-weight: normal;
+  font-weight: $n;
 }
 ul {
   list-style-type: none;
@@ -108,6 +110,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: $color;
 }
 </style>
