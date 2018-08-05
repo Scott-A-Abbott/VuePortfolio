@@ -7,10 +7,17 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
+  methods: {
+    beforeAppear(){
+      console.log("Working")
+    }
+  },
   render() {
     return (
       <div class="hello">
-        <h1>{this.msg}</h1>
+        <transition appear onBefore-appear={this.beforeAppear}>
+          <h1>{this.msg}</h1>
+        </transition>
         <h2>Essential Links</h2>
         <ul>
           <li>
